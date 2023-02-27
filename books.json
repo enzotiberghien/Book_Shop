@@ -1,0 +1,185 @@
+[
+  {
+    "id": 1,
+    "title": "Responsive Design with Bootstrap",
+    "author": "Jake Spurlock",
+    "description": "Lorem ipsum",
+    "category": "UX",
+    "price": 200,
+    "coverImage": "https://m.media-amazon.com/images/I/51UNGbXYZhL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Bootstrap 4 Quick Start: A Beginner's Guide to Building Responsive Layouts with Bootstrap 4",
+    "author": "Jacob Lett",
+    "description": "Lorem ipsum",
+    "category": "UX",
+    "price": 150,
+    "coverImage": "https://m.media-amazon.com/images/I/51EfWyfZIdL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Bootstrap 4 Cookbook: Over 75 recipes to help you build elegant and responsive web applications with Bootstrap 4",
+    "author": "Ajay Hira",
+    "description": "Lorem ipsum",
+    "category": "UX",
+    "price": 300,
+    "coverImage": "https://m.media-amazon.com/images/I/61iZDG+ZhmL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Learning Bootstrap 4 - Second Edition: A comprehensive guide to building responsive, mobile-first websites with Bootstrap 4",
+    "author": "Matt Lambert",
+    "description": "Lorem ipsum",
+    "category": "UX",
+    "price": 250,
+    "coverImage": "https://m.media-amazon.com/images/I/71vu7Ljve1L._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Bootstrap 4 Site Blueprints: Build real-world, advanced responsive web projects using Bootstrap 4",
+    "author": "Bass Jobsen",
+    "description": "Lorem ipsum",
+    "category": "UX",
+    "price": 350,
+    "coverImage": "https://m.media-amazon.com/images/I/61IONhxNaiL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 6,
+    "title": "HTML - An Introduction",
+    "author": "James Horton",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto eius rerum magnam nam dolor officia, voluptates beatae officiis doloremque temporibus! Magnam ipsum reprehenderit numquam omnis dignissimos nam officia molestiae quis quod nesciunt eos pariatur non doloremque soluta, consectetur cumque ab rem culpa eligendi in debitis optio. Veniam obcaecati esse pariatur qui similique aut, quae minus amet sequi. Architecto vero odio quis autem sapiente eligendi commodi voluptatum explicabo repellat repellendus veniam maxime dolores, quaerat enim suscipit magni incidunt perferendis consequuntur qui minus esse soluta! Corrupti, labore obcaecati! Cumque culpa cupiditate at molestiae quos velit dolor numquam recusandae animi quia neque nihil veritatis hic, sed error ad accusantium placeat nemo asperiores inventore nesciunt omnis corporis. Tempore porro, totam modi, corrupti perspiciatis sit assumenda exercitationem esse, perferendis iure sint magnam reiciendis maxime. Nisi corrupti eius iure natus saepe reiciendis, odit laboriosam tempore deleniti quibusdam blanditiis molestias, soluta autem ea expedita obcaecati? Illum, deserunt cum similique optio distinctio iste. Animi, aliquam ipsa illo distinctio ratione atque odio expedita iusto repellat quas fugiat, doloribus dolor tenetur numquam fuga tempore qui? Pariatur quaerat neque, soluta eum illo voluptatem distinctio ratione quia, sunt molestias itaque illum quo possimus. Quae eius ducimus, deserunt quam ratione mollitia, libero debitis blanditiis ullam eveniet expedita eligendi enim assumenda odit tenetur dolorum maiores cupiditate qui molestiae sequi facere? Molestias suscipit assumenda voluptate tempora quam rem impedit odio animi esse accusamus facilis iste, nemo atque quisquam libero recusandae dolor ut sit in, molestiae sequi facere expedita voluptatem hic. Quam, explicabo ratione eos repellendus nostrum dignissimos quidem expedita aperiam voluptatum beatae quis provident soluta consectetur doloremque enim eveniet distinctio iure nemo, ipsa odit temporibus quasi in! In natus odio iste iure minima quis rem, provident earum nisi! Minus, labore doloremque, aliquam excepturi aperiam nemo facere nam perspiciatis dignissimos nihil quae voluptatibus dolore corrupti corporis!",
+    "category": "HTML",
+    "price": 200,
+    "coverImage": "https://m.media-amazon.com/images/I/61GDj2m7LDL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 7,
+    "title": "HTML and CSS: Design and Build Websites",
+    "author": "Jon Duckett",
+    "description": "Lorem ipsum",
+    "category": "HTML",
+    "price": 250,
+    "coverImage": "https://m.media-amazon.com/images/I/41WznOEKmAL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 8,
+    "title": "HTML5: Up and Running",
+    "author": "Mark Pilgrim",
+    "description": "Lorem ipsum",
+    "category": "HTML",
+    "price": 300,
+    "coverImage": "https://m.media-amazon.com/images/I/81mT3Gi5WfL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 9,
+    "title": "HTML5 and CSS3: Develop with Tomorrow's Standards Today",
+    "author": "Brian P. Hogan",
+    "description": "Lorem ipsum",
+    "category": "HTML",
+    "price": 350,
+    "coverImage": "https://m.media-amazon.com/images/I/41VmFu+aXPL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Learning Web Design: A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics",
+    "author": "Jennifer Niederst Robbins",
+    "description": "Lorem ipsum",
+    "category": "HTML",
+    "price": 400,
+    "coverImage": "https://m.media-amazon.com/images/I/A1O2e-E1WkL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 11,
+    "title": "CSS - An Introduction",
+    "author": "Laura Lemay",
+    "description": "Lorem ipsum",
+    "category": "CSS",
+    "price": 200,
+    "coverImage": "https://m.media-amazon.com/images/I/61DN5mS368L._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 12,
+    "title": "CSS Mastery: Advanced Web Standards Solutions",
+    "author": "Simon Collison",
+    "description": "Lorem ipsum",
+    "category": "CSS",
+    "price": 250,
+    "coverImage": "https://m.media-amazon.com/images/I/718gbKoBptL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 13,
+    "title": "CSS: The Missing Manual",
+    "author": "David Sawyer McFarland",
+    "description": "Lorem ipsum",
+    "category": "CSS",
+    "price": 300,
+    "coverImage": "https://m.media-amazon.com/images/I/61KBdqtcwxL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 14,
+    "title": "CSS for Babies",
+    "author": "Sterling Children's",
+    "description": "Lorem ipsum",
+    "category": "CSS",
+    "price": 350,
+    "coverImage": "https://m.media-amazon.com/images/I/51w2JhuAoAL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 15,
+    "title": "CSS Pocket Reference: Visual Presentation for the Web",
+    "author": "Eric A. Meyer",
+    "description": "Lorem ipsum",
+    "category": "CSS",
+    "price": 400,
+    "coverImage": "https://m.media-amazon.com/images/I/71eIi5xjXlL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+
+
+
+  {
+    "id": 16,
+    "title": "JavaScript for Beginners",
+    "author": "John Smith",
+    "description": "A beginner's guide to JavaScript programming",
+    "category": "JavaScript",
+    "price": 990,
+    "coverImage": "https://m.media-amazon.com/images/I/61AhekCgmbL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Advanced JavaScript Techniques",
+    "author": "Jane Doe",
+    "description": "Learn advanced JavaScript programming techniques",
+    "category": "JavaScript",
+    "price": 1290,
+    "coverImage": "https://m.media-amazon.com/images/I/61LRCjQoRcL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 18,
+    "title": "JavaScript Frameworks",
+    "author": "Bob Johnson",
+    "description": "A comprehensive guide to JavaScript frameworks",
+    "category": "JavaScript",
+    "price": 1490,
+    "coverImage": "https://m.media-amazon.com/images/I/61bLvX+EMIL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 19,
+    "title": "JavaScript - an introduction",
+    "author": "Mary Smith",
+    "description": "An introduction to JavaScript programming",
+    "category": "JavaScript",
+    "price": 790,
+    "coverImage": "https://m.media-amazon.com/images/I/51uA8A656pL._AC_UL600_FMwebp_QL65_.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Building Applications with JavaScript",
+    "author": "Tom Jones",
+    "description": "Learn to build web applications using JavaScript",
+    "category": "JavaScript",
+    "price": 1190,
+    "coverImage": "https://m.media-amazon.com/images/I/71EbX10sz5L._AC_UL600_FMwebp_QL65_.jpg"
+  }
+]
