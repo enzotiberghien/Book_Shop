@@ -45,52 +45,36 @@ const SideNav = () => {
 
   <h5 class="">Price</h5>
   <label for="customRange3" class="form-label">Price Range (SEK): </label>
-  <input type="range" class="form-range" min="0" max="2000" step="10" id="customRange3"
-    oninput="
-      var range1 = document.getElementById('customRange3');
-      var range2 = document.getElementById('customRange4');
-      var minPrice = Math.min(parseInt(range1.value), parseInt(range2.value));
-      var maxPrice = Math.max(parseInt(range1.value), parseInt(range2.value));
-      var priceText = minPrice.toString() + ' SEK - ' + maxPrice.toString() + ' SEK';
-      document.getElementById('price').innerHTML = priceText;
-    ">
-  <input type="range" class="form-range" min="0" max="2000" step="10" id="customRange4"
-    oninput="
-      var range1 = document.getElementById('customRange3');
-      var range2 = document.getElementById('customRange4');
-      var minPrice = Math.min(parseInt(range1.value), parseInt(range2.value));
-      var maxPrice = Math.max(parseInt(range1.value), parseInt(range2.value));
-      var priceText = minPrice.toString() + ' SEK - ' + maxPrice.toString() + ' SEK';
-      document.getElementById('price').innerHTML = priceText;
-    ">
-  <div id="price">0 SEK - 2000 SEK</div>
+  <input type="range" class="form-range price-range" value="0" id="min-price" min="0" max="1500" step="10">
+  <input type="range" class="form-range price-range" value="1500" id="max-price" min="0" max="1500" step="10">
+  <div id="price">0 SEK - 1500 SEK</div>
 
 
   <hr class="my-5">
 
   <h5 class="">Sort By</h5>
   <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-    <label class="form-check-label" for="flexRadioDefault1">
+    <input class="form-check-input sortBtns title-ascending" type="radio" name="flexRadioDefault" id="t-asc">
+    <label class="form-check-label" for="t-asc">
       Title Ascending
     </label>
   </div>
   <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-    <label class="form-check-label" for="flexRadioDefault2">
+    <input class="form-check-input sortBtns title-descending" type="radio" name="flexRadioDefault" id="t-desc" checked>
+    <label class="form-check-label" for="t-desc">
       Title Descending
     </label>
   </div>
   <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-    <label class="form-check-label" for="flexRadioDefault2">
+    <input class="form-check-input sortBtns price-ascending" type="radio" name="flexRadioDefault" id="p-asc" checked>
+    <label class="form-check-label" for="p-asc">
       Price Ascending
     </label>
   </div>
   <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-    <label class="form-check-label" for="flexRadioDefault2">
-      Price Ascending
+    <input class="form-check-input sortBtns price-descending" type="radio" name="flexRadioDefault" id="p-desc" checked>
+    <label class="form-check-label" for="p-desc">
+      Price Descending
     </label>
   </div>
 </div>

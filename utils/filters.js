@@ -44,4 +44,21 @@ const filterByAuthor = (event) => {
   } else displayBooks(filteredBooks);
 }
 
-export { addFilters, addFilterByAuthors }
+const addFilterByPrice = () => {
+  const priceInputs = $all(".price-range")
+  priceInputs.forEach(e => e.addEventListener("input", filterByPrice))
+}
+
+const filterByPrice = () => {
+  let range1 = $("#min-price").value;
+  let range2 = $("#max-price").value;
+  let minPrice = Math.min(parseInt(range1), parseInt(range2));
+  let maxPrice = Math.max(parseInt(range1), parseInt(range2));
+  let priceText = minPrice.toString() + ' SEK - ' + maxPrice.toString() + ' SEK';
+  $("#price").innerHTML = priceText;
+
+  setFilteredBooks(books.filter(book => book["price"] >= minPrice && book["price"] <= maxPrice))
+  displayBooks(filteredBooks)
+}
+
+export { addFilters, addFilterByAuthors, addFilterByPrice, filterByPrice }

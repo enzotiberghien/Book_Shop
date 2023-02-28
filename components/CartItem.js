@@ -1,5 +1,5 @@
-const CartItem = (book) => {
-  const { coverImage, title, price } = book; // destructuring book object properties
+const CartItem = (item) => {
+  const { coverImage, title, price, quantity } = item; // destructuring item object properties
 
   return `
     <div class="d-flex m-3 product cart-items">
@@ -9,12 +9,12 @@ const CartItem = (book) => {
         <p class="cart-price"><span class="cart-product-price">${price}</span> SEK</p>
         <div class="d-flex align-items-center">
           <button class="decrement-btn btn btn-outline-secondary">-</button>
-          <div class="mx-2 cart-sum">1</div>
+          <div class="mx-2 cart-sum">${quantity}</div>
           <button class="increment-btn btn btn-outline-secondary">+</button>
-        </div> 
+        </div>
       </div>
     </div>
   `;
 };
 
-export { CartItem };
+export {CartItem}

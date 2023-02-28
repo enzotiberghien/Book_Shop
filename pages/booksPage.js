@@ -4,7 +4,8 @@ import { SideNav } from "../components/SideNav.js";
 import { $, $all } from "../utils/querySelector.js";
 import { Book } from "../components/Book.js";
 import { Modal } from "../components/Modal.js";
-import { addFilters, addFilterByAuthors } from "../utils/filters.js";
+import { addFilters, addFilterByAuthors, addFilterByPrice } from "../utils/filters.js";
+import { addSorts } from "../utils/sorts.js";
 
 // Books State
 let books = [];
@@ -21,6 +22,8 @@ const start = async () => {
   addFilters()
   addFilterByAuthors()
   addEventsToCart()
+  addFilterByPrice()
+  addSorts()
 }
 
 

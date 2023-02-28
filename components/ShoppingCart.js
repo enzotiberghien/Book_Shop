@@ -1,7 +1,6 @@
 import { CartItem } from "../components/CartItem.js";
 import { $, $all } from "../utils/querySelector.js";
 
-
 const ShoppingCart = () => {
   return `
   <div class="overlay"></div>
@@ -29,47 +28,61 @@ const addEventsToCart = () => {
   })
 }
 
-const addToCart = (bookStr) => {
-  console.log(bookStr)
-  const book = bookStr
-  // Add itemsto the Shopping Cart
-  $("#products").innerHTML += `
-  ${CartItem(book)}
-  `
 
-  // Add events listeners to the cart items btns
+let cartItems = []; // create an array to store the cart items
+
+const addToCart = (book) => {
+  // Check if the book is already in the cart
+  let bookExists = false;
+  for (let i = 0; i < cartItems.length; i++) {
+    if (book["title"] === cartItems[i].title) {
+      console.log("Book already exists");
+      cartItems[i].quantity += 1; // increment the quantity of the book in the cart
+      bookExists = true;
+      break;
+    }
+  }
+  if (bookExists) {
+    renderCartItems(); // re-render the cart items
+    return;
+  }
+
+  cartItems.push({ ...book, quantity: 1 });
+  renderCartItems();
+};
+
+
+const renderCartItems = () => {
+  let cartHTML = "";
+  cartItems.forEach(item => {
+    cartHTML += CartItem(item);
+  });
+  $("#products").innerHTML = cartHTML;
+
   $all(".decrement-btn").forEach(e => {
-    const tempPrice = parseInt(e.parentElement.parentElement.querySelector(".cart-product-price").textContent)
     e.addEventListener("click", () => {
-      const sum = parseInt(e.parentElement.querySelector(".mx-2").textContent);
-      console.log(sum)
-      if (sum - 1 === 0) e.parentElement.parentElement.parentElement.innerHTML = ""
-      e.parentElement.querySelector(".mx-2").textContent = sum - 1;
-      let price = e.parentElement.parentElement.querySelector(".cart-product-price")
-      console.log(price)
-      price.textContent = tempPrice * (sum - 1)
-      calculateTotal()
-    })
-  })
+      const sum = parseInt(e.parentElement.querySelector(".cart-sum").textContent);
+      console.log(sum);
+      if (sum - 1 === 0) e.parentElement.parentElement.parentElement.remove();
+      else e.parentElement.querySelector(".cart-sum").textContent = sum - 1;
+      calculateTotal();
+    });
+  });
   $all(".increment-btn").forEach(e => {
-    const tempPrice = parseInt(e.parentElement.parentElement.querySelector(".cart-product-price").textContent)
     e.addEventListener("click", () => {
-      const sum = parseInt(e.parentElement.querySelector(".mx-2").textContent);
-      console.log(sum)
-      e.parentElement.querySelector(".mx-2").textContent = sum + 1;
-      let price = e.parentElement.parentElement.querySelector(".cart-product-price")
-      price.textContent = tempPrice * (sum + 1)
-      calculateTotal()
-    })
-  })
-}
+      const sum = parseInt(e.parentElement.querySelector(".cart-sum").textContent);
+      console.log(sum);
+      e.parentElement.querySelector(".cart-sum").textContent = sum + 1;
+      calculateTotal();
+    });
+  });
+};
 
 
-// Calculate total of shopping cart
 const calculateTotal = () => {
   let sum = 0;
   $all(".cart-price").forEach(e => {
-    sum += parseInt(e.textContent)
+    sum += parseInt(e.textContent) * parseInt(e.parentElement.querySelector(".cart-sum").textContent)
   })
   $("#total").textContent = sum
 }
