@@ -8,12 +8,13 @@ const loadHome = () => {
           <p class="lead my-4">
             Welcome to our online bookshop, where you can explore a wide selection of captivating books and immerse yourself in new worlds. Browse our collection and discover your next favorite read today!
           </p>
-          <button class="btn btn-primary btn-lg">Start Shopping</button>
+          <button class="btn btn-primary btn-lg start-shopping">Start Shopping</button>
         </div>
         <img src="img/readers.png" alt="" class="img-fluid w-50 d-none d-md-block">
       </div>
     </div>
   </section>`
 }
+
 
 export { loadHome }

@@ -17,13 +17,15 @@ const ShoppingCart = () => {
 const addEventsToCart = () => {
   const cartBtn = $("#shopping-cart-btn")
   cartBtn.addEventListener("click", () => {
+    $(".overlay").classList.remove("reverse");
     $(".overlay").style.display = "block"
+    $("#shopping-cart").classList.remove("reverse");
     $("#shopping-cart").style.display = "flex"
     calculateTotal()
 
     $(".overlay").onclick = () => {
-      $(".overlay").style.display = "none"
-      $("#shopping-cart").style.display = "none"
+      $(".overlay").classList.toggle('reverse');
+      $("#shopping-cart").classList.toggle('reverse');
     }
   })
 }
@@ -54,7 +56,7 @@ const addToCart = (book) => {
 
 const renderCartItems = () => {
   let cartHTML = "";
-  cartItems.forEach(item => {
+  cartItems.forEach(item => { 
     cartHTML += CartItem(item);
   });
   $("#products").innerHTML = cartHTML;

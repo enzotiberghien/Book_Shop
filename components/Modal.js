@@ -12,7 +12,7 @@ const Modal = (book) => {
                   <div class="col-md-7 d-flex flex-column justify-content-around">
                     <h5 class="modal-title" id="modal-${book["id"]}-label">${book["title"]}</h5>
                     <h6 class="text-secondary">${book["author"]}</h6>
-                    <p class="modal-description desc">${book["description"]}</p>
+                    <div class="modal-description desc">${book["description"]}</div>
                     <p class="modal-description">${book["price"]}0 SEK</p>
                     <div class="">
                       <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>

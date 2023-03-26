@@ -59,9 +59,9 @@ section {
 }
 
 .desc {
-  max-height: 40vh;
+  max-height: 300px;
   overflow: auto;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* .modal {
@@ -72,11 +72,40 @@ section {
   width: 100vw;
   height: 100vh;
   top: 0;
-  left: 0;
+  left: 100vw;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   display: none;
+  animation: slide-in 0.5s forwards;
+}
+
+.overlay.reverse {
+  animation-name: slide-out;
+}
+
+#shopping-cart.reverse {
+  animation-name: slide-out-cart;
+}
+
+@keyframes slide-in {
+  from { left: 100vw; }
+  to { left: 0; }
+}
+
+@keyframes slide-out {
+  from { left: 0; }
+  to { left: 100vw; }
+}
+
+@keyframes slide-in-cart {
+  from { right: -100vw; }
+  to { right: 0; }
+}
+
+@keyframes slide-out-cart {
+  from { right: 0; }
+  to { right: -100vw; }
 }
 
 .overlay:hover {
@@ -91,10 +120,11 @@ section {
   z-index: 999;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100vw;
   width: 30vw;
   height: 100vh;
   background-color: white;
+  animation: slide-in-cart 0.5s forwards;
 }
 
 @media only screen and (max-width: 1000px) {

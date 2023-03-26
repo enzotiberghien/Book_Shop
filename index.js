@@ -6,6 +6,4 @@ loadHome()
 
 $("#nav-home-btn").addEventListener("click", loadHome)
 $("#nav-books-btn").addEventListener("click", loadBooksPage)
-
-
-
+$(".start-shopping").addEventListener("click", loadBooksPage)
