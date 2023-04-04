@@ -17,7 +17,7 @@ const setFilteredBooks = (value) => filteredBooks = value
 
 
 const start = async () => {
-  books = await getJSON('../books.json');
+  books = await getJSON('../utils/books.json');
   displayBooks(await books);
   addFilters()
   addFilterByAuthors()
