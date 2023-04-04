@@ -44,6 +44,7 @@ const filterByAuthor = (event) => {
   } else displayBooks(filteredBooks);
 }
 
+
 const addFilterByPrice = () => {
   const priceInputs = $all(".price-range")
   priceInputs.forEach(e => e.addEventListener("input", filterByPrice))
